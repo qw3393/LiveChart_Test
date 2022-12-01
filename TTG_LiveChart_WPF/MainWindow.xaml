@@ -4,9 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TTG_LiveChart_WPF"
+        xmlns:vw="clr-namespace:TTG_LiveChart_WPF.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="750" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="600*" />
+            <RowDefinition Height="150*" />
+        </Grid.RowDefinitions>
+        <vw:ChartView Grid.Row="0" />
     </Grid>
 </Window>
